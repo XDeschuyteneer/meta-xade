@@ -40,3 +40,33 @@ MACHINE="raspberrypi0-wifi" bitbake test
 ```
 bitbake xadeos-debug
 ```
+
+# Custom OS SDK
+
+## Build the SDK
+
+```
+bitbake xadeos-debug -c populate-sdk
+```
+
+## Use the SDK
+
+Now, you can find a big SH file containing the SDK installer.
+Copy it on any machine, execute it, follow the instructions.
+```
+export SDK_INSTALL_DIR=/tmp/xadeos-sdk
+mkdir -p ${SDK_INSTALL_DIR}
+${WORKSPACE}/poky/build/tmp/deploy/sdk/XaDeOS-glibc-x86_64-xadeos-debug-cortexa7hf-neon-vfpv4-toolchain-2.4.1.sh -d ${SDK_INSTALL_DIR} -y
+```
+
+You will then be able to execute the SDK launcher and cross-build any application
+
+```
+git clone https://github.com/TheZ3ro/ninvaders.git /tmp/ninvaders
+. /tmp/test-sdk/environment-setup-cortexa7hf-neon-vfpv4-poky-linux-gnueabi
+cd /tmp/ninvaders
+./configure
+make -e
+file nInvaders # show you an ARM file
+# you can copy this file directly on your raspberry pi
+```
