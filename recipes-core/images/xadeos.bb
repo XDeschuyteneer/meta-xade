@@ -9,6 +9,5 @@ LICENSE = "MIT"
 
 inherit core-image
 
-IMAGE_PKGTYPE = "rpm"
 IMAGE_FSTYPES = "tar.bz2 ext4 tar.xz"
 IMAGE_ROOTFS_SIZE = "8192"
