@@ -4,7 +4,7 @@ The goal of this project is to provide OS customisation and SDK (toolchain, etc.
 
 This github project provides my own meta layer that provides:
 * a distribution : XaDeOS
-* some images : XaDeOS and XaDeOS-debug
+* some images : xadeos and xadeos-debug
 * some machines : raspberry-pi-zero-wifi
 * some recipes : test
 
