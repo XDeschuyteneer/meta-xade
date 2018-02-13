@@ -23,11 +23,7 @@ repo sync
 # Setup Poky CROPS (CROssPlatformS)
 ```
 docker run --rm -it -v ${WORKSPACE}:/workdir crops/poky --workdir=/workdir/poky
-source oe-init-build-env
-bitbake-layers add-layer ../meta-oe
-bitbake-layers add-layer ../meta-python
-bitbake-layers add-layer ../meta-raspberrypi
-bitbake-layers add-layer ../meta-xade
+TEMPLATECONF=meta-xade/conf source oe-init-build-env
 ```
 
 # Build "test" application

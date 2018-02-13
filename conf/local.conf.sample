@@ -1,3 +1,4 @@
 PARALLEL_MAKE = "-j 8"
 BB_NUMBER_THREADS = "8"
 MACHINE = "raspberrypi3"
+DISTRO = "XaDeOS"
