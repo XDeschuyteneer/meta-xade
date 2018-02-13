@@ -33,5 +33,10 @@ You can build it to ensure your setup is correct.
 
 ```
 MACHINE="raspberrypi0-wifi" bitbake test
-MACHINE="raspberrypi3" bitbake test
+```
+
+# Build "XaDe" OS
+
+```
+bitbake xadeos-debug
 ```
