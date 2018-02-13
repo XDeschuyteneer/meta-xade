@@ -5,7 +5,7 @@ The goal of this project is to provide OS customisation and SDK (toolchain, etc.
 This github project provides my own meta layer that provides:
 * a distribution : XaDeOS
 * some images : xadeos and xadeos-debug
-* some machines : raspberry-pi-zero-wifi
+* some machines : raspberry-pi-zero-wifi, raspberry-pi-3
 * some recipes : test
 
 # meta-xade
@@ -35,8 +35,8 @@ bitbake-layers add-layer ../meta-xade
 
 This meta-layer contains a test recipe: test.
 You can build it to ensure your setup is correct.
-We will build it for a raspberry PI Zero WiFi
 
 ```
 MACHINE="raspberry-pi-zero-wifi" bitbake test
+MACHINE="raspberry-pi-3" bitbake test
 ```
