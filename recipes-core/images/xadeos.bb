@@ -1,6 +1,7 @@
 SUMMARY = "XaDe OS"
 
-IMAGE_INSTALL = "packagegroup-core-boot"
+IMAGE_INSTALL += "kernel-modules"
+IMAGE_INSTALL += "packagegroup-core-boot"
 IMAGE_INSTALL += "${CORE_IMAGE_EXTRA_INSTALL}"
 
 IMAGE_LINGUAS = " "
