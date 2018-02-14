@@ -10,5 +10,5 @@ LICENSE = "MIT"
 
 inherit core-image
 
-IMAGE_FSTYPES = "tar.bz2 ext4 tar.xz"
+IMAGE_FSTYPES = "tar.bz2 ext4 tar.xz sdcard"
 IMAGE_ROOTFS_SIZE = "8192"

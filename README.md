@@ -32,14 +32,25 @@ This meta-layer contains a test recipe: test.
 You can build it to ensure your setup is correct.
 
 ```
+MACHINE="raspberrypi3" bitbake test
 MACHINE="raspberrypi0-wifi" bitbake test
 ```
 
 # Build "XaDe" OS
 
+Build the OS for a specific machine
+
 ```
-bitbake xadeos-debug
+MACHINE=imx6ulevk bitbake xadeos-debug
 ```
+
+Deploy it on a SDCard
+
+```
+sudo dd if=${BUILDDIR}/tmp/deploy/images/imx6ulevk/xadeos-debug-imx6ulevk.sdcard of=/dev/mmcblk0
+```
+
+You will then be able to login with xade/xade
 
 # Custom OS SDK
 
