@@ -16,4 +16,5 @@
         <linkfile src="meta-oe" dest="poky/meta-oe"/>
         <linkfile src="meta-python" dest="poky/meta-python"/>
     </project>
+    <project name="meta-freescale.git" remote="yoctoproject" path="poky/meta-freescale"/>
 </manifest>

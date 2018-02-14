@@ -12,5 +12,6 @@ BBLAYERS ?= " \
   ##OEROOT##/meta-oe \
   ##OEROOT##/meta-python \
   ##OEROOT##/meta-raspberrypi \
+  ##OEROOT##/meta-freescale \
   ##OEROOT##/meta-xade \
   "
