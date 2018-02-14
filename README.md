@@ -32,8 +32,7 @@ This meta-layer contains a test recipe: test.
 You can build it to ensure your setup is correct.
 
 ```
-MACHINE="raspberrypi3" bitbake test
-MACHINE="raspberrypi0-wifi" bitbake test
+MACHINE="imx6ulevk" bitbake test
 ```
 
 # Build "XaDe" OS
@@ -59,7 +58,7 @@ You will then be able to login with xade/xade
 Inside the docker (and bitbake env setup)
 
 ```
-bitbake xadeos-debug -c populate-sdk
+MACHINE=imx6ulevk bitbake xadeos-debug -c populate-sdk
 ```
 
 ## Use the SDK
