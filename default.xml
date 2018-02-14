@@ -9,7 +9,7 @@
 
     <project name="poky.git" remote="yoctoproject" path="poky"/>
     <project name="meta-xade.git" remote="github-xade" path="poky/meta-xade" revision="refs/heads/master">
-        <linkfile src="conf/teamplateconf.cfg" dest="poky/.templateconf">
+        <linkfile src="conf/templateconf.cfg" dest="poky/.templateconf"/>
     </project>
     <project name="meta-raspberrypi.git" remote="github-agherzan" path="poky/meta-raspberrypi"/>
     <project name="meta-openembedded.git" remote="oe" path="poky/meta-openembedded">
