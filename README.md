@@ -45,11 +45,15 @@ bitbake xadeos-debug
 
 ## Build the SDK
 
+Inside the docker (and bitbake env setup)
+
 ```
 bitbake xadeos-debug -c populate-sdk
 ```
 
 ## Use the SDK
+
+On your host computer.
 
 Now, you can find a big SH file containing the SDK installer.
 Copy it on any machine, execute it, follow the instructions.
