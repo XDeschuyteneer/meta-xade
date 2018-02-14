@@ -8,7 +8,9 @@
     <remote name="oe" fetch= "git://git.openembedded.org/"/>
 
     <project name="poky.git" remote="yoctoproject" path="poky"/>
-    <project name="meta-xade.git" remote="github-xade" path="poky/meta-xade" revision="refs/heads/master"/>
+    <project name="meta-xade.git" remote="github-xade" path="poky/meta-xade" revision="refs/heads/master">
+        <linkfile src="conf/teamplateconf.cfg" dest="poky/.templateconf">
+    </project>
     <project name="meta-raspberrypi.git" remote="github-agherzan" path="poky/meta-raspberrypi"/>
     <project name="meta-openembedded.git" remote="oe" path="poky/meta-openembedded">
         <linkfile src="meta-oe" dest="poky/meta-oe"/>
