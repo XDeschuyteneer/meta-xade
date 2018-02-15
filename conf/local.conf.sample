@@ -1,3 +1,4 @@
 PARALLEL_MAKE = "-j ${@oe.utils.cpu_count()}"
 BB_NUMBER_THREADS = "${@oe.utils.cpu_count()}"
 DISTRO = "XaDeOS"
+MACHINE ?= "imx6ulevk"
