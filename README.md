@@ -48,7 +48,10 @@ bitbake xadeos-debug
 Deploy it on a SDCard
 
 ```
+# for a raspberrypi3
 sudo dd if=${BUILDDIR}/tmp/deploy/images/imx6ulevk/xadeos-debug-imx6ulevk.sdcard of=/dev/mmcblk0
+# for the imx6ulevk
+sudo dd if=${BUILDDIR}/tmp/deploy/images/raspberrypi3/xadeos-debug-raspberrypi3.rpi-sdimg of=/dev/mmcblk0
 ```
 
 You will then be able to login with xade/xade
