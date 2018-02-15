@@ -89,3 +89,18 @@ make -e
 file nInvaders # show you an ARM file
 # you can copy this file directly on your raspberry pi
 ```
+
+# Check for CVE
+
+Inside the docker (and bitbake env setup)
+
+You can check CVE for images or individual recipes.
+
+```
+bitbake xadeos-debug -c check_cve
+bitbake test -c check_cve
+```
+
+Bitbake will output warning for every CVE found.
+You will get a summary of all CVE (sorted by package) in ${BUILDDIR}/tmp/deploy/cve/ .
+If this directory is empty, that means you are not impacted by any CVE.
