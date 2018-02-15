@@ -6,6 +6,7 @@ This github project provides my own meta layer that provides:
 * a distribution : XaDeOS
 * some images : xadeos and xadeos-debug
 * some recipes : test
+* some machines : rpi (raspberrypi3, raspberrypi0-wifi, etc.) and imx (imx6ul, imx6ulevk, etc.)
 
 # meta-xade
 Poky meta layer building a generic minimal OS
@@ -32,7 +33,8 @@ This meta-layer contains a test recipe: test.
 You can build it to ensure your setup is correct.
 
 ```
-MACHINE="imx6ulevk" bitbake test
+bitbake test # by default, build for imx6ulevk
+MACHINE="raspberrypi3" bitbake test
 ```
 
 # Build "XaDe" OS
@@ -40,7 +42,7 @@ MACHINE="imx6ulevk" bitbake test
 Build the OS for a specific machine
 
 ```
-MACHINE=imx6ulevk bitbake xadeos-debug
+bitbake xadeos-debug
 ```
 
 Deploy it on a SDCard
@@ -58,7 +60,7 @@ You will then be able to login with xade/xade
 Inside the docker (and bitbake env setup)
 
 ```
-MACHINE=imx6ulevk bitbake xadeos-debug -c populate-sdk
+bitbake xadeos-debug -c populate-sdk
 ```
 
 ## Use the SDK
