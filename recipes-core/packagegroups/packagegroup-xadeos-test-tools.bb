@@ -5,3 +5,4 @@ PR = "r1"
 inherit packagegroup
 
 RDEPENDS_${PN} = "stress-ng"
+RDEPENDS_${PN} += "stressapptest"
