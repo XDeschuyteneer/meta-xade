@@ -63,7 +63,7 @@ You will then be able to login with xade/xade
 Inside the docker (and bitbake env setup)
 
 ```
-bitbake xadeos-debug -c populate-sdk
+bitbake xadeos-debug -c populate_sdk
 ```
 
 ## Use the SDK
